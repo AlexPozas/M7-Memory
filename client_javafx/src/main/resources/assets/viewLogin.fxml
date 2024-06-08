@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.ControllerLogin">
+   <children>
+      <AnchorPane prefHeight="50.0" style="-fx-background-color: #e3e3e3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="MEMORY - CONNECTION" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="Serif Regular" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" layoutY="50.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label layoutX="348.0" layoutY="40.0" text="Server IP" textFill="#848484" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ipTF" layoutX="301.0" layoutY="60.0" text="192.168.19.163" AnchorPane.topAnchor="60.0" />
+            <Label layoutX="341.0" layoutY="110.0" text="Server port" textFill="#848484" AnchorPane.topAnchor="110.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="portTF" layoutX="301.0" layoutY="130.0" text="8888" AnchorPane.topAnchor="130.0" />
+            <Label layoutX="356.0" layoutY="180.0" text="Name" textFill="#848484" AnchorPane.topAnchor="180.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTF" layoutX="301.0" layoutY="200.0" text="Messi" AnchorPane.topAnchor="200.0" />
+            <Button layoutX="340.0" layoutY="268.0" mnemonicParsing="false" onAction="#connectToWS" style="-fx-background-color: #007BFF;" text="CONNECT" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
